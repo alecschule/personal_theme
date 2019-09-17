@@ -16,16 +16,31 @@ function alec_personal_customize_register($wp_customize)
 
     // Given name for home page
     $wp_customize->add_setting('user_given_name', array(
-        'default'   => 'John',
+        'default'   => 'John Smith',
         'sanitize_callback' => 'sanitize_text_field',
     ));
 
     $wp_customize-> add_control('user_given_name_control', array(
-        'label'     => 'Name you wish to be addressed by.',
+        'label'     => 'Name to display on the front page',
         'section'   => 'custom_home_page',
         'settings'  => 'user_given_name',
         'type'      => 'text',
     ));
+
+    define("nFeaturedPages", 3);
+
+    for ($i = 0; $i < nFeaturedPages; $i++) {
+        $wp_customize->add_setting('feature_page_' . $i, array(
+            'sanitize_callback' => 'absint',
+        ));
+
+        $wp_customize-> add_control('feature_page_' . $i . '_control', array(
+            'label'     => 'Feature Page ' . $i,
+            'section'   => 'custom_home_page',
+            'settings'  => 'feature_page_' . $i,
+            'type'      => 'dropdown-pages',
+        ));
+    }
 }
 
 add_action('customize_register', 'alec_personal_customize_register');
