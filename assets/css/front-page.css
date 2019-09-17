@@ -1,0 +1,57 @@
+#front-page {
+  /* body */
+  background-image: url("../img/edges.png");
+}
+
+#front-container {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+#salut {
+  font-size: 72px;
+}
+
+#name {
+  color: #2F00D6;
+}
+
+/* Mobile First */
+#fp-links {
+  margin: 0 auto;
+  display: block;
+  width: 700px;
+}
+
+.fp-link {
+  display: block;
+  height: 100px;
+  width: 200px;
+  line-height: 100px;
+  float: left;
+  margin: 0 15px;
+  border: 1px solid white;
+}
+
+#fp-links a {
+  color: inherit;
+}
+
+.fp-link p {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* TODO responsiveness */
+
+@media only screen and (min-width: 600px) {
+  .fp-link {
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .fp-link {
+  }
+}
