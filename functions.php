@@ -43,6 +43,13 @@ function alec_personal_customize_register($wp_customize)
     }
 }
 
+function register_menus() 
+{
+  register_nav_menu('header-menu', __('Header Menu', 'alec-personal'));
+}
+
 add_action('customize_register', 'alec_personal_customize_register');
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
+add_action('init', 'register_menus');
