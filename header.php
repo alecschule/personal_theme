@@ -26,7 +26,7 @@
         'container_id'    => 'navbar_collapse',
         'theme_location'  => 'header-menu',
         'menu_class'      => '', 
-        'items_wrap'      => '<ul class="navbar-nav mr-auto">%3$s</ul>',
+        'items_wrap'      => '<ul class="navbar-nav ml-auto">%3$s</ul>',
         'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
         'walker'          => new WP_Bootstrap_Navwalker()
       ));
