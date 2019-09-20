@@ -53,3 +53,6 @@ add_action('customize_register', 'alec_personal_customize_register');
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 add_action('init', 'register_menus');
+
+// Custom navigation walker for bootstrap navbar
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
