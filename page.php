@@ -10,6 +10,4 @@ get_header();
 <?php endif; ?>
 </div>
 
-</body>
-
-</html>
+<?php get_footer(); ?>
