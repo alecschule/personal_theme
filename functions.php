@@ -2,7 +2,10 @@
 function add_theme_scripts() {
     // Bootstrap bundle includes Popper JS
     // Wordpress includes JQuery
-    wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js');
+    wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js',
+      array('jquery')); // jquery dependency
+    wp_enqueue_script('main_js', get_template_directory_uri() . '/assets/js/javascript.js',
+      array('jquery')); 
     wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
     wp_enqueue_style('main_style_css', get_template_directory_uri() . '/style.css');
 }
@@ -14,7 +17,7 @@ function alec_personal_customize_register($wp_customize)
         'description'   => 'Settings section for this theme.',
         'priority'      => 120,
     ));
-
+    
     // Given name for home page
     $wp_customize->add_setting('user_given_name', array(
         'default'   => 'John Smith',
