@@ -10,3 +10,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: alecpersonal
 Tags: 
 */
+
+html, body {
+  background-image: url("assets/img/edges.png");
+}
+
+.main-container {
+}
+
+.bg-texture {
+}
