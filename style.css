@@ -16,6 +16,10 @@ body {
   color: #f0f0f0; /* very light grey */
 }
 
+#main-content-column p {
+    font-size: 18px;
+}
+
 .main-container {
 }
 
