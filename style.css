@@ -11,8 +11,9 @@ Text Domain: alecpersonal
 Tags: 
 */
 
-html, body {
+body {
   background-image: url("assets/img/edges.png");
+  color: #f0f0f0; /* very light grey */
 }
 
 .main-container {
