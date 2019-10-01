@@ -16,6 +16,10 @@ body {
   color: #f0f0f0; /* very light grey */
 }
 
+.wp-block-image figcaption {
+    color: inherit !important;
+}
+
 #main-content-column p {
     font-size: 18px;
 }
