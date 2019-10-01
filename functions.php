@@ -7,7 +7,7 @@ function add_theme_scripts() {
     wp_enqueue_script('main_js', get_template_directory_uri() . '/assets/js/javascript.js',
       array('jquery')); 
     wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
-    wp_enqueue_style('main_style_css', get_template_directory_uri() . '/style.css', array(), time()); // use time for version
+    wp_enqueue_style('main_style_css', get_template_directory_uri() . '/style.css');
 }
 
 function alec_personal_customize_register($wp_customize)
